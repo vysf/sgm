@@ -26,5 +26,4 @@ Perlu authentikasi di akun google.com [menit 40:09](https://www.youtube.com/watc
 - ubah MAIL_HOST di env dengan host google.
 
 ## License
-
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
