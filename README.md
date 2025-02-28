@@ -16,14 +16,14 @@ Uncomment baris kode di mode `User`, cek `\app\Models\User.php`. [Source](https:
 ## Upload file ke Hostingan
 Tutorial upload projek laravel lewat ssh [source](https://www.youtube.com/watch?v=KtUNSjXMK1U), sekalian make terminal.
 - Upload seperti biasa. Untuk install dan update dependesi pakai terminal hosting.
-- Jalankan seed. Pastikan sudah buat database
+- Jalankan seed. Pastikan sudah buat database.
 ```
 php artisan db:seed
 ```
 
 ## Konfigurasi email
 Perlu authentikasi di akun google.com [menit 40:09](https://www.youtube.com/watch?v=J20l1RGyIZE)
-- ubah MAIL_HOST di env dengan host google
+- ubah MAIL_HOST di env dengan host google.
 
 ## License
 
