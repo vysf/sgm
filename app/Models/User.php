@@ -2,13 +2,16 @@
 
 namespace App\Models;
 
-// use Illuminate\Contracts\Auth\MustVerifyEmail;
+// UNCOMMENT UNTUK PRODUCTION
+// use Filament\Models\Contracts\FilamentUser;
+// use Filament\Panel;
+
 use App\Models\Company;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
-class User extends Authenticatable
+class User extends Authenticatable // implements FilamentUser
 {
     use HasFactory, Notifiable;
 
@@ -32,6 +35,12 @@ class User extends Authenticatable
         'password',
         'remember_token',
     ];
+
+    // UNCOMMENT UNTUK PRODUCTION
+    // public function canAccessPanel(Panel $panel): bool
+    // {
+    //     return str_ends_with($this->email, '@yourdomain.com') && $this->hasVerifiedEmail();
+    // }
 
     /**
      * Get the attributes that should be cast.
